@@ -15,3 +15,6 @@ git clone https://github.com/alacritty/alacritty
 cd alacritty
 cargo build --release
 sudo cp target/release/alacritty /usr/local/bin
+
+#-------------------------- install feh ------------------------------------------------------------------------
+sudo apt install feh -y
