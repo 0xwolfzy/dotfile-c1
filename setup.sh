@@ -9,5 +9,9 @@ sudo tar -xf firefoxsetup.tar.bz2 --directory /opt
 sudo apt install polybar -y
 
 #------------------------- install alacritty ------------------------------------------------------------------
-sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 -y
-cargo install alacritty
+sudo apt install cargo -y
+sudo curl https://sh.rustup.rs -sSf | sh
+git clone https://github.com/alacritty/alacritty
+cd alacritty
+cargo build --release
+sudo cp target/release/alacritty /usr/local/bin
